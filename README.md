@@ -1,7 +1,5 @@
 # Uas-PSDA
 untuk memenuhi tugas akhir semester PSDA
-
-//header file
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -26,7 +24,22 @@ void tambah(Node **root, int databaru)
             //inisialisasi awal node yang baru dibuat
             baru->data = databaru;
             baru->kiri = NULL;
-					
+            baru->kanan = NULL;
+            (*root) = baru;
+            (*root)->kiri = NULL;
+            (*root)->kanan = NULL;
+            printf("Data bertambah!");
+      }{
+      //jika root masih kosong
+      if((*root) == NULL)
+      {
+            //pembuatan node baru
+            Node *baru;
+            //pengalokasian memori dari node yang telah dibuat
+            baru = new Node;
+            //inisialisasi awal node yang baru dibuat
+            baru->data = databaru;
+            baru->kiri = NULL;
             baru->kanan = NULL;
             (*root) = baru;
             (*root)->kiri = NULL;
