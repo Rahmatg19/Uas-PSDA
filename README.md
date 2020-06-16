@@ -26,6 +26,7 @@ void tambah(Node **root, int databaru)
             //inisialisasi awal node yang baru dibuat
             baru->data = databaru;
             baru->kiri = NULL;
+					
             baru->kanan = NULL;
             (*root) = baru;
             (*root)->kiri = NULL;
